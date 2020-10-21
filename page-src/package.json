@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "http://styles.iservice.info/pages/",
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^23.0.0",
+    "@ckeditor/ckeditor5-react": "^2.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -16,7 +18,7 @@
     "react-dom": "^16.13.1",
     "react-jss": "^10.4.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^3.4.4",
     "react-svg-line-chart": "^2.0.1",
     "simple-flexbox": "^2.3.1",
     "styled-components": "^4.3.2"

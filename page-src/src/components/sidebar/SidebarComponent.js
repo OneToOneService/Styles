@@ -40,6 +40,12 @@ function SidebarComponent() {
                 onClick={() => onClick(SLUGS.buttons)}
             />
 			<MenuItem
+                id={SLUGS.richtext}
+                title='Rich Text Editor'
+                icon=''
+                onClick={() => onClick(SLUGS.richtext)}
+            />
+			<MenuItem
                 id={SLUGS.charts}
                 title='Charts'
                 icon=''
@@ -93,12 +99,7 @@ function SidebarComponent() {
                 icon=''
                 onClick={() => onClick(SLUGS.panels)}
             />
-			 <MenuItem
-                id={SLUGS.richtext}
-                title='Rich Text Editor'
-                icon=''
-                onClick={() => onClick(SLUGS.richtext)}
-            />
+			 
 			 <MenuItem
                 id={SLUGS.tables}
                 title='Tables'
