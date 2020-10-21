@@ -46,12 +46,6 @@ function SidebarComponent() {
                 onClick={() => onClick(SLUGS.richtext)}
             />
 			<MenuItem
-                id={SLUGS.charts}
-                title='Charts'
-                icon=''
-                onClick={() => onClick(SLUGS.charts)}
-            />
-			 <MenuItem
                 id={SLUGS.colors}
                 title='Colors'
                 icon=''
@@ -63,6 +57,14 @@ function SidebarComponent() {
                 icon=''
                 onClick={() => onClick(SLUGS.errormessages)}
             />
+			<MenuItem
+                id={SLUGS.charts}
+                title='Charts'
+                icon=''
+                onClick={() => onClick(SLUGS.charts)}
+            />
+			
+			
 			 <MenuItem
                 id={SLUGS.forminput}
                 title='Form Input'
