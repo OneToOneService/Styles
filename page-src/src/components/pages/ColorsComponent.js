@@ -6,6 +6,7 @@ const ColorsComponent = () => {
     <div class="content">
 	     <div class="row">
             <div class="col-md-12">
+			
 			 <div class="box box-default color-palette-box">
           <div class="box-header with-border">
             <h3 class="box-title"><i class="fa fa-tag"></i> Color Palette</h3>
@@ -98,7 +99,11 @@ const ColorsComponent = () => {
               </div>
               
             </div>
-            
+            <p>
+			  iService uses following button styling for different action
+			  
+			</p>
+			  
           </div>
           
         </div>

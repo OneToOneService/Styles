@@ -6,6 +6,9 @@ const ButtonComponent = () => {
        <div class="content">
 	     <div class="row">
             <div class="col-md-12">
+			<p class="action-description">
+			  iService buttons are usually used in form action like save.
+			</p>
 			  <div class="box box-primary">
 			    <div class="box-header">
 				  <h3 class="box-title"> <i class="fa fa-edit"></i> Buttons </h3>
@@ -131,10 +134,29 @@ const ButtonComponent = () => {
 						</tr>
 					</tbody>
 				</table>
+				
+				<div class="">
+				    <h2 class="action-list-title">Example</h2>
+				    <p class="action-description">
+					  iService includes several predefined button styles, each serving its own semantic purpose.
+					</p>
+					<ul class="item-actions">
+					<li>
+						<div>
+						  <button class="btn btn-primary" type="button">Save</button>  Save or Add action.
+						  
+						</div>
+					</li>
+					<li>
+						<div>
+						  <button class="btn btn-danger btn-delete" type="button">Delete...</button>  Delete or Remove action 
+						  
+						</div>
+					</li>				
+				  </ul>
+				</div>	
 				</div>
 				
-				
-					
 			  </div>
 			  
 			</div>
