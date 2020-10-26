@@ -1,6 +1,10 @@
 <IfModule mod_rewrite.c>
-  RewriteEngine on
+  RewriteEngine On
+  RewriteRule .*\.git/.* - [F]
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
 </IfModule>
