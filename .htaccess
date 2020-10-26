@@ -1,3 +1,10 @@
-RewriteEngine On
-RewriteRule .*\.git/.* - [F]
-Redirect 302 / http://styleguide.iservice.info/
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule .*\.git/.* - [F]
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
