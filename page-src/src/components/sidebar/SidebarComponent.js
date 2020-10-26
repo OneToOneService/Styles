@@ -1,6 +1,6 @@
 import React from 'react';
 //import { createUseStyles, useTheme } from 'react-jss';
-import { useHistory } from 'react-router-dom';
+import { useHistory,HashRouter } from 'react-router-dom';
 import SLUGS from '../../resources/slugs';
 import { convertSlugToUrl } from '../../resources/utilities';
 import LogoComponent from './LogoComponent';
@@ -136,6 +136,7 @@ function SidebarComponent() {
 			 
             
         </Menu>
+	
     );
 }
 

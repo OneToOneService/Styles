@@ -1,5 +1,6 @@
 import React from 'react';
 
+const splitButton = '<div class="btn-group">\n\t<button type="button" class="btn btn-warning">Action</button>\n\t<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">\n\t\t<span class="caret"></span>\n\t\t<span class="sr-only">Toggle Dropdown</span>\n\t</button>\n</div>';
 
 const ButtonComponent = () => {
     return (
@@ -144,13 +145,17 @@ const ButtonComponent = () => {
 					<li>
 						<div>
 						  <button class="btn btn-primary" type="button">Save</button>  Save or Add action.
-						  
+						  <div class="code-container">
+						  <p>&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;Save&lt;/button&gt;</p>
+						  </div>
 						</div>
 					</li>
 					<li>
 						<div>
 						  <button class="btn btn-danger btn-delete" type="button">Delete...</button>  Delete or Remove action 
-						  
+						  <div class="code-container">
+						  <p>&lt;button class=&quot;btn btn-danger btn-delete&quot; type=&quot;button&quot;&gt;Delete...&lt;/button&gt;</p>
+						  </div>
 						</div>
 					</li>				
 				  </ul>
@@ -242,7 +247,9 @@ const ButtonComponent = () => {
 									</ul>
 								</div>
 							</div>
-						  
+						    <div> 
+							   <textarea class="form-control code-container" value={splitButton} cols={40} rows={10} />
+							</div>
 						</div>
 					</div>
 				</div>
