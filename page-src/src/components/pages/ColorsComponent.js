@@ -99,10 +99,63 @@ const ColorsComponent = () => {
               </div>
               
             </div>
-            <p>
-			  iService uses following button styling for different action
-			  
-			</p>
+            <div class="">
+				    <h2 class="action-list-title">Example</h2>
+				    <p class="action-description">
+					  iService uses above color schemes buttons, labels, text colors and backgrounds.
+					</p>
+					<ul class="item-actions">
+					<li>
+						<div>
+						  <small class="label label-with-icon bg-blue">bg blue</small>
+													
+						  <div class="code-container">
+						  <p>&lt;small class=&quot;label label-with-icon bg-blue&quot;&gt;bg blue&lt;/small&gt;</p>
+						  </div>
+						</div>
+					</li>
+					<li>
+						<div>
+						  <small class="bg-green label">bg green</small>
+						  <div class="code-container">
+						  <p>&lt;small class=&quot;bg-green label&quot;&gt;bg green&lt;/small&gt;</p>
+						  </div>
+						</div>
+					</li>
+					<li>
+						<div>
+						  <small class="bg-yellow label">bg yellow</small>
+						  <div class="code-container">
+						  <p>&lt;small class=&quot;bg-yellow label&quot;&gt;bg green&lt;/small&gt;</p>
+						  </div>
+						</div>
+					</li>
+					<li>
+						<div>
+						  <small class="bg-red label">bg red</small>
+						  <div class="code-container">
+						  <p>&lt;small class=&quot;bg-red label&quot;&gt;bg green&lt;/small&gt;</p>
+						  </div>
+						</div>
+					</li>
+					<li>
+						<div>
+						  <small class="bg-gray label">bg gray</small>
+						  <div class="code-container">
+						  <p>&lt;small class=&quot;bg-gray label&quot;&gt;bg green&lt;/small&gt;</p>
+						  </div>
+						</div>
+					</li>
+					<li>
+						<div>
+						  <small class="bg-teal label">bg teal</small>
+						  <div class="code-container">
+						  <p>&lt;small class=&quot;bg-teal label&quot;&gt;bg teal&lt;/small&gt;</p>
+						  </div>
+						</div>
+					</li>					
+				  </ul>
+				</div>	
 			  
           </div>
           

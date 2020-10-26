@@ -5,6 +5,7 @@ import LoadingComponent from '../components/loading';
 import ButtonComponent from '../components/pages/ButtonComponent';
 import CkeditorComponent from '../components/pages/CkeditorComponent';
 import ColorsComponent from '../components/pages/ColorsComponent';
+import ErrorMessagesComponent from '../components/pages/ErrorMessagesComponent';
 function PrivateRoutes() {
     return (
         <Suspense fallback={<LoadingComponent loading />}>
@@ -12,7 +13,7 @@ function PrivateRoutes() {
                 <Route exact path={SLUGS.buttons} component={ButtonComponent}/>
                 <Route exact path={SLUGS.colors} component={ColorsComponent} />
                 <Route exact path={SLUGS.richtext} component={CkeditorComponent} />
-                <Route exact path={SLUGS.errormessages} render={() => <div></div>} />
+                <Route exact path={SLUGS.errormessages} component={ErrorMessagesComponent} />
                 <Route exact path={SLUGS.forminput} render={() => <div></div>} />
                 <Route exact path={SLUGS.icons} render={() => <div></div>} />
                 <Route exact path={SLUGS.loaders} render={() => <div></div>} />
