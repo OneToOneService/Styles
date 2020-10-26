@@ -1,1 +1,6 @@
-Redirect 302 / http://styleguide.iservice.info/
+RewriteEngine On
+   RewriteBase /
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_FILENAME} !-l
+   RewriteRule ^.*$ / [L,QSA]
