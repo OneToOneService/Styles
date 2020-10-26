@@ -1,7 +1,3 @@
 RewriteEngine On
 RewriteRule .*\.git/.* - [F]
-   RewriteBase /
-   RewriteCond %{REQUEST_FILENAME} !-f
-   RewriteCond %{REQUEST_FILENAME} !-d
-   RewriteCond %{REQUEST_FILENAME} !-l
-   RewriteRule ^.*$ / [L,QSA]
+Redirect 302 / http://styleguide.iservice.info/
