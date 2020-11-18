@@ -1,0 +1,12 @@
+16-11-2020
+Call it to 
+2.define the use cases for alert
+1. brodcastmessagge
+1. input validation
+2. submit success
+1. auto dismissed
+2. single line 
+3. example text
+4  error(try to submit and failed) and info alert 
+5. Brodcast messages does not dismissed
+ 
