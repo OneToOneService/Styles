@@ -12,6 +12,7 @@
           <b-list-group-item href="#list-item-icons">Icons</b-list-group-item>
           <b-list-group-item href="#list-item-loaders">Loaders</b-list-group-item>
           <b-list-group-item href="#list-item-logos">Logos</b-list-group-item>
+          <b-list-group-item href="#list-item-notification">Notification And Alerts</b-list-group-item>
           <b-list-group-item href="#list-item-panels">Panels</b-list-group-item>
           <b-list-group-item href="#list-item-richtext">Rich Text Editor</b-list-group-item>
         <b-list-group-item href="#list-item-tables">Tables</b-list-group-item>
@@ -41,10 +42,12 @@
           <p>{{ text }}</p>
           <h4 id="list-item-logos">Logos</h4>
           <p>{{ text }}</p>
+          <h4 id="list-item-notification">Notifications and Alerts</h4>
+          <p><NotificationComponents></NotificationComponents></p>
           <h4 id="list-item-panels">Panels</h4>
           <p>{{ text }}</p>
           <h4 id="list-item-richtext">Rich Text Editors</h4>
-          <p>{{ text }}</p>
+          <p><CKeditorComponents></CKeditorComponents></p>
           <h4 id="list-item-tables">Tables</h4>
           <p>{{ text }}</p>
           <h4 id="list-item-tabs">Tabs</h4>
@@ -66,12 +69,16 @@ import ButtonsComponents from './ButtonsComponents'
 import ErrorMessagesComponents from './ErrorMessagesComponents'
 import ColorsComponents from './ColorsComponents'
 import FormsComponents from './FormsComponents'
+import CKeditorComponents from './CKeditorComponents'
+import NotificationComponents from './NotificationComponents'
 export default {
   components: {
     ButtonsComponents,
     ErrorMessagesComponents,
     ColorsComponents,
-    FormsComponents
+    FormsComponents,
+    CKeditorComponents,
+    NotificationComponents
   },
   data () {
     return {
