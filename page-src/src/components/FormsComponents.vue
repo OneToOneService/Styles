@@ -143,9 +143,9 @@
             </div>
             <h3>Input Group With Button</h3>
             <b-input-group class="mt-3">
-              <b-form-input></b-form-input>
+              <b-form-input size="sm"></b-form-input>
               <b-input-group-append>
-                <b-button variant="info">Button</b-button>
+                <b-button variant="primary" class="btn-sm">Button</b-button>
               </b-input-group-append>
             </b-input-group>
             <br>
@@ -159,26 +159,34 @@
             <br>
             <h3>DatePicker</h3>
             <div>
-              <label for="example-input">Choose a date</label>
-              <b-input-group class="mb-3">
-                <b-form-input
-                  id="example-input"
-                  type="text"
-                  v-model="value"
-                  placeholder="YYYY-MM-DD"
-                  autocomplete="off"
-                ></b-form-input>
-                <b-input-group-append>
-                  <b-form-datepicker
-                    button-only
-                    v-model="value"
-                    right
-                    locale="en-US"
-                    aria-controls="example-input"
-                    @context="onContext"
-                  ></b-form-datepicker>
-                </b-input-group-append>
+              <label for="example-input">Choose a date time picker</label>
+              <b-input-group>
+                <div class="btn btn-default btn-calendar-left">
+                  <i class="fa fa-calendar"></i>
+                </div>
+                <datetime format="MM/DD/YYYY h:i A" v-model="val"></datetime>
               </b-input-group>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">Select List Options</h3>
+          </div>
+          <div class="box-body">
+            <div class="mb-3">
+              <label class="typo__label">Single select</label>
+              <multiselect v-model="value" :options="options" :searchable="true" :close-on-select="true" :show-labels="false" placeholder="--Default Mailbox--"></multiselect>
+            </div>
+            <div class="mb-3">
+              <label class="typo__label">Select Mulitiple</label>
+              <multiselect v-model="value2" :options="options2" :searchable="true" :multiple="true" :close-on-select="true" :show-labels="false" placeholder="Select Topics"></multiselect>
+            </div>
+            <div>
+              <label class="typo__label">Groups</label>
+              <multiselect v-model="value3" :options="options3" :multiple="false" group-values="libs" group-label="language" :show-labels="false" :group-select="false" placeholder="Type to search" track-by="name" label="name"><span slot="noResult">Oops! No elements found. Consider changing the search query.</span></multiselect>
             </div>
           </div>
         </div>
@@ -187,7 +195,10 @@
   </div>
 </template>
 <script>
+import datetime from 'vuejs-datetimepicker'
+import Multiselect from 'vue-multiselect'
 export default {
+  components: { datetime, Multiselect },
   name: 'FormsComponents',
   computed: {
     state () {
@@ -203,7 +214,6 @@ export default {
   data () {
     return {
       name: '',
-      value: '',
       formatted: '',
       selected: '',
       form: {
@@ -213,7 +223,28 @@ export default {
         checked: []
       },
       foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
-      show: true
+      show: true,
+      value: '',
+      value2: '',
+      options2: ['eshop All Topics', '.._feedback', '.._Newsletter Subscription', '.._Spam', '.._Undeliverable', '..Acount Questions', '....Orders', '....Refund', '....Return', '..Products', '....Audio Video', '....Camera', '....Television'],
+      options: ['Customer Support(support@example.com)', 'Sales(sales@example.com)', 'Technical Support(technical@example.com)'],
+      options3: [
+        {
+          language: 'Segment',
+          libs: [
+            { name: 'Vue.js' },
+            { name: 'Adonis' }
+          ]
+        },
+        {
+          language: 'Segment2',
+          libs: [
+            { name: 'Rails' },
+            { name: 'Sinatra' }
+          ]
+        }
+      ],
+      value3: []
     }
   },
   methods: {
@@ -243,3 +274,4 @@ export default {
   }
 }
 </script>
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>

@@ -275,4 +275,26 @@ h2.action-list-title{font-size:22px;font-weight:bold;margin-bottom:15px}
 .mright-15{margin-right:15px;}
 .mright-5{margin-right:5px;}
 .form-group label{font-weight:600;margin-bottom: 2px; padding-bottom:0px;}
-
+.form-control.is-invalid, .was-validated .form-control:invalid{background:none;}
+.btn-calendar-left{background: none; border-radius: 0px;margin-right: -1px;padding: 3px 12px;}
+.year-month-wrapper,.nav-r,.nav-l,.activePort,.port:hover,.scroll-hider li.active{background:#00c0ef !important; color:#ffffff !important;}
+.month[data-v-4bd11526], .year[data-v-4bd11526]{width:53px;}
+.days,.okButton{color:#666666 !important;}
+.multiselect__tags {
+    min-height: 25px;
+    display: block;
+    padding: 3px 40px 0 8px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    background: #ffffff;
+    font-size: 14px;
+}
+.multiselect__option--highlight{background:none;color:#35495e;}
+.multiselect__option--selected.multiselect__option--highlight,.multiselect__option--selected{background:#3875d7; color:#ffffff;}
+.multiselect__option { padding: 6px; min-height: 30px;font-size: 14px;
+}
+.multiselect__placeholder {
+    margin-bottom: 5px;
+}
+.multiselect__tag{margin-bottom:0px;background:#00c0ef;}
+.multiselect__select{height:32px;}
