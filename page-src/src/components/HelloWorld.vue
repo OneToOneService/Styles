@@ -37,11 +37,11 @@
           <h4 id="list-item-forminput">Form Inputs</h4>
           <p><FormsComponents></FormsComponents></p>
           <h4 id="list-item-icons">Icons</h4>
-          <p>{{ text }}</p>
+          <p><IconsComponents></IconsComponents></p>
           <h4 id="list-item-loaders">Loaders</h4>
-          <p>{{ text }}</p>
+          <p><LoadersComponents></LoadersComponents></p>
           <h4 id="list-item-logos">Logos</h4>
-          <p>{{ text }}</p>
+           <p><LogoComponents></LogoComponents></p>
           <h4 id="list-item-notification">Notifications and Alerts</h4>
           <p><NotificationComponents></NotificationComponents></p>
           <h4 id="list-item-panels">Panels</h4>
@@ -51,14 +51,13 @@
           <h4 id="list-item-tables">Tables</h4>
           <p>{{ text }}</p>
           <h4 id="list-item-tabs">Tabs</h4>
-          <p>{{ text }}</p>
+          <p><TabComponents></TabComponents></p>
           <h4 id="list-item-timeline">Timeline</h4>
           <p>{{ text }}</p>
           <h4 id="list-item-treeview">Treeview</h4>
           <p>{{ text }}</p>
           <h4 id="list-item-typography">Typography</h4>
           <p>{{ text }}</p>
-
         </div>
       </div>
     </div>
@@ -71,6 +70,10 @@ import ColorsComponents from './ColorsComponents'
 import FormsComponents from './FormsComponents'
 import CKeditorComponents from './CKeditorComponents'
 import NotificationComponents from './NotificationComponents'
+import IconsComponents from './IconsComponents'
+import LoadersComponents from './LoadersComponents'
+import LogoComponents from './LogoComponents'
+import TabComponents from './TabComponents'
 export default {
   components: {
     ButtonsComponents,
@@ -78,7 +81,11 @@ export default {
     ColorsComponents,
     FormsComponents,
     CKeditorComponents,
-    NotificationComponents
+    NotificationComponents,
+    IconsComponents,
+    LoadersComponents,
+    LogoComponents,
+    TabComponents
   },
   data () {
     return {

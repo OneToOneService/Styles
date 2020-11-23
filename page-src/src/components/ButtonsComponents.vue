@@ -7,7 +7,7 @@
         </p>
         <div class="box box-primary">
           <div class="box-header with-border">
-            <h3 class="box-title"> <i class="fa fa-edit"></i> Buttons </h3>
+            <h3 class="box-title"> <i class="fa fa-circle-o"></i> Buttons </h3>
           </div>
           <div class="box-body  table-responsive">
             <table class="table table-bordered text-center">
