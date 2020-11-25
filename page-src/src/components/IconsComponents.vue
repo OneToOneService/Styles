@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <div class="box box-default">
           <div class="box-header with-border">
-            <h3 class="box-title"><i class="fa fa-circle-o"></i> Iservice Icons</h3>
+            <h3 class="box-title"> Iservice Icons</h3>
           </div>
           <div class="box-body">
             <div class="custom-icon">

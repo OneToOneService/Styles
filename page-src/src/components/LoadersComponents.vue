@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <div class="box box-default color-palette-box">
           <div class="box-header with-border">
-            <h3 class="box-title"><i class="fa fa-circle-o"></i> Loaders</h3>
+            <h3 class="box-title"> Loaders</h3>
           </div>
           <div class="box-body">
             <section id="spinner">
@@ -19,7 +19,7 @@
         </div>
         <div class="box box-default color-palette-box">
           <div class="box-header with-border">
-            <h3 class="box-title"><i class="fa fa-circle-o"></i> Section Loaders</h3>
+            <h3 class="box-title"> Section Loaders</h3>
           </div>
           <div class="box-body">
             <section id="box-loader">

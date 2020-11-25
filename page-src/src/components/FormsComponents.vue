@@ -4,7 +4,7 @@
       <div class="col-md-6">
         <div class="box box-primary">
           <div class="box-header with-border">
-            <h3 class="box-title"><i class="fa fa-circle-o"></i> Vertical Form Example</h3>
+            <h3 class="box-title">Vertical Form Example</h3>
           </div>
           <div class="box-body">
             <div>
@@ -127,18 +127,11 @@
             <h3 class="box-title">Other Form Elements</h3>
           </div>
           <div class="box-body">
-            <h3>Invalid Input</h3>
+            <h3>Required Input</h3>
             <div>
-              <b-form-group
-                id="fieldset-1"
-                description="Let us know your name."
-                label="Enter your name"
-                label-for="input-1"
-                valid-feedback="Thank you!"
-                :invalid-feedback="invalidFeedback"
-                :state="state"
-              >
-                <b-form-input id="input-1" v-model="name" :state="state" trim size="sm"></b-form-input>
+             <b-form-group>
+                <label class="typo__label required">Email Address <span>(required)</span></label>
+                <b-form-input id="input-1" v-model="form.email" type="email" required placeholder="Enter email" size="sm"></b-form-input>
               </b-form-group>
             </div>
             <h3>Input Group With Button</h3>
@@ -178,15 +171,19 @@
           <div class="box-body">
             <div class="mb-3">
               <label class="typo__label">Single select</label>
-              <multiselect v-model="value" :options="options" :searchable="true" :close-on-select="true" :show-labels="false" placeholder="--Default Mailbox--"></multiselect>
+              <multiselect v-model="value" placeholder="-Default Mailbox-" label="title" track-by="title" :options="options" :option-height="104"  :show-labels="false">
+                <template slot="option" slot-scope="props">
+                  <div class="option__desc"><span class="option__title">{{ props.option.title }}</span><br><span class="option__small">{{ props.option.email }}</span></div>
+                </template>
+              </multiselect>
             </div>
             <div class="mb-3">
               <label class="typo__label">Select Mulitiple</label>
               <multiselect v-model="value2" :options="options2" :searchable="true" :multiple="true" :close-on-select="true" :show-labels="false" placeholder="Select Topics"></multiselect>
             </div>
             <div>
-              <label class="typo__label">Groups</label>
-              <multiselect v-model="value3" :options="options3" :multiple="false" group-values="libs" group-label="language" :show-labels="false" :group-select="false" placeholder="Type to search" track-by="name" label="name"><span slot="noResult">Oops! No elements found. Consider changing the search query.</span></multiselect>
+              <label class="typo__label">Select Groups</label>
+              <multiselect class="multiselect-group" v-model="value3" :options="options3" :multiple="false" group-values="libs" group-label="language" :show-labels="false" :group-select="false" placeholder="Type to search" track-by="name" label="name"><span slot="noResult">Oops! No elements found. Consider changing the search query.</span></multiselect>
             </div>
           </div>
         </div>
@@ -227,20 +224,30 @@ export default {
       value: '',
       value2: '',
       options2: ['eshop All Topics', '.._feedback', '.._Newsletter Subscription', '.._Spam', '.._Undeliverable', '..Acount Questions', '....Orders', '....Refund', '....Return', '..Products', '....Audio Video', '....Camera', '....Television'],
-      options: ['Customer Support(support@example.com)', 'Sales(sales@example.com)', 'Technical Support(technical@example.com)'],
+      options: [
+        { title: 'Segment1 Topic 1 (default)', email: 's1topic@example.com' },
+        { title: 'Segment1 Topic 1,2 (default)', email: 's1s2topic@example.com' },
+        { title: 'Segment1 Topic 1,2,3', email: 's1s2s3topic@example.com' },
+        { title: 'Segment1 Topic 1,2,3,4', email: 's1s2s3s4topic@example.com' }
+      ],
       options3: [
         {
-          language: 'Segment',
+          language: 'Finance',
           libs: [
-            { name: 'Vue.js' },
-            { name: 'Adonis' }
+            { name: 'Finance All Topics' },
+            { name: '..Spam' },
+            { name: '.._Undeliverable' }
           ]
         },
         {
-          language: 'Segment2',
+          language: 'Financial Services',
           libs: [
-            { name: 'Rails' },
-            { name: 'Sinatra' }
+            { name: 'Financial Services - All Topics' },
+            { name: '.._Undeliverable' },
+            { name: '..Spam' },
+            { name: '..CM Approved' },
+            { name: '..CM Finance Pre Approval' },
+            { name: '..CM Pending Final Approval' }
           ]
         }
       ],

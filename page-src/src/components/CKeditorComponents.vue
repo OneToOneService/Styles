@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <div class="box box-default">
           <div class="box-header with-border">
-            <h3 class="box-title"><i class="fa fa-circle-o"></i> Rich Text Editor</h3>
+            <h3 class="box-title">Rich Text Editor</h3>
           </div>
           <div class="box-body">
              <ckeditor :editor="editor" v-model="editorData"></ckeditor>

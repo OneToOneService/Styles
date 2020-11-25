@@ -7,12 +7,11 @@
           <b-list-group-item href="#list-item-buttons" class="active"> Buttons</b-list-group-item>
           <b-list-group-item href="#list-item-colors">Colors</b-list-group-item>
           <b-list-group-item href="#list-item-charts">Charts</b-list-group-item>
-          <b-list-group-item href="#list-item-messages">Error Messages</b-list-group-item>
         <b-list-group-item href="#list-item-forminput"> Form Inputs</b-list-group-item>
           <b-list-group-item href="#list-item-icons">Icons</b-list-group-item>
           <b-list-group-item href="#list-item-loaders">Loaders</b-list-group-item>
           <b-list-group-item href="#list-item-logos">Logos</b-list-group-item>
-          <b-list-group-item href="#list-item-notification">Notification And Alerts</b-list-group-item>
+          <b-list-group-item href="#list-item-notification">Notifications And Error Messages</b-list-group-item>
           <b-list-group-item href="#list-item-panels">Panels</b-list-group-item>
           <b-list-group-item href="#list-item-richtext">Rich Text Editor</b-list-group-item>
         <b-list-group-item href="#list-item-tables">Tables</b-list-group-item>
@@ -32,8 +31,6 @@
           <p><ColorsComponents></ColorsComponents></p>
           <h4 id="list-item-charts">Charts</h4>
           <p>{{ text }}</p>
-          <h4 id="list-item-messages">Error Messages</h4>
-          <p><ErrorMessagesComponents></ErrorMessagesComponents></p>
           <h4 id="list-item-forminput">Form Inputs</h4>
           <p><FormsComponents></FormsComponents></p>
           <h4 id="list-item-icons">Icons</h4>
@@ -65,7 +62,6 @@
 </template>
 <script>
 import ButtonsComponents from './ButtonsComponents'
-import ErrorMessagesComponents from './ErrorMessagesComponents'
 import ColorsComponents from './ColorsComponents'
 import FormsComponents from './FormsComponents'
 import CKeditorComponents from './CKeditorComponents'
@@ -77,7 +73,6 @@ import TabComponents from './TabComponents'
 export default {
   components: {
     ButtonsComponents,
-    ErrorMessagesComponents,
     ColorsComponents,
     FormsComponents,
     CKeditorComponents,

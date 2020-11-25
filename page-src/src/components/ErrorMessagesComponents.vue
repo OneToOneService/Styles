@@ -4,7 +4,7 @@
       <div class="col-md-12">
          <div class="box box-primary">
             <div class="box-header">
-               <h3 class="box-title"><i class="fa fa-circle-o"></i> Broadcast Error Messages </h3>
+               <h3 class="box-title"> Broadcast Error Messages </h3>
             </div>
             <div class="box-body  table-responsive">
                <div class="box-body">
