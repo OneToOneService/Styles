@@ -7,15 +7,15 @@
           <b-list-group-item href="#list-item-buttons" class="active"> Buttons</b-list-group-item>
           <b-list-group-item href="#list-item-colors">Colors</b-list-group-item>
           <b-list-group-item href="#list-item-charts">Charts</b-list-group-item>
-        <b-list-group-item href="#list-item-forminput"> Form Inputs</b-list-group-item>
+          <b-list-group-item href="#list-item-forminput"> Form Inputs</b-list-group-item>
           <b-list-group-item href="#list-item-icons">Icons</b-list-group-item>
           <b-list-group-item href="#list-item-loaders">Loaders</b-list-group-item>
           <b-list-group-item href="#list-item-logos">Logos</b-list-group-item>
           <b-list-group-item href="#list-item-notification">Notifications And Error Messages</b-list-group-item>
           <b-list-group-item href="#list-item-panels">Panels</b-list-group-item>
           <b-list-group-item href="#list-item-richtext">Rich Text Editor</b-list-group-item>
-        <b-list-group-item href="#list-item-tables">Tables</b-list-group-item>
-        <b-list-group-item href="#list-item-tabs">Tabs</b-list-group-item>
+          <b-list-group-item href="#list-item-tables">Tables</b-list-group-item>
+          <b-list-group-item href="#list-item-tabs">Tabs</b-list-group-item>
           <b-list-group-item href="#list-item-timeline">Timeline</b-list-group-item>
           <b-list-group-item href="#list-item-treeview">Treeview</b-list-group-item>
           <b-list-group-item href="#list-item-typography">Typography</b-list-group-item>
@@ -27,33 +27,33 @@
         <div id="listgroup-ex" class="list-style">
           <h4 id="list-item-buttons">Buttons</h4>
           <p><ButtonsComponents></ButtonsComponents></p>
-          <h4 id="list-item-colors">Colors</h4>
+          <h4 id="list-item-colors" class="mtop-15">Colors</h4>
           <p><ColorsComponents></ColorsComponents></p>
-          <h4 id="list-item-charts">Charts</h4>
+          <h4 id="list-item-charts" class="mtop-15">Charts</h4>
           <p>{{ text }}</p>
-          <h4 id="list-item-forminput">Form Inputs</h4>
+          <h4 id="list-item-forminput" class="mtop-15">Form Inputs</h4>
           <p><FormsComponents></FormsComponents></p>
-          <h4 id="list-item-icons">Icons</h4>
+          <h4 id="list-item-icons" class="mtop-15">Icons</h4>
           <p><IconsComponents></IconsComponents></p>
-          <h4 id="list-item-loaders">Loaders</h4>
+          <h4 id="list-item-loaders" class="mtop-15">Loaders</h4>
           <p><LoadersComponents></LoadersComponents></p>
-          <h4 id="list-item-logos">Logos</h4>
+          <h4 id="list-item-logos" class="mtop-15">Logos</h4>
            <p><LogoComponents></LogoComponents></p>
-          <h4 id="list-item-notification">Notifications and Alerts</h4>
+          <h4 id="list-item-notification" class="mtop-15">Notifications and Alerts</h4>
           <p><NotificationComponents></NotificationComponents></p>
-          <h4 id="list-item-panels">Panels</h4>
+          <h4 id="list-item-panels" class="mtop-15">Panels</h4>
           <p>{{ text }}</p>
-          <h4 id="list-item-richtext">Rich Text Editors</h4>
+          <h4 id="list-item-richtext" class="mtop-15">Rich Text Editors</h4>
           <p><CKeditorComponents></CKeditorComponents></p>
-          <h4 id="list-item-tables">Tables</h4>
+          <h4 id="list-item-tables" class="mtop-15">Tables</h4>
           <p>{{ text }}</p>
-          <h4 id="list-item-tabs">Tabs</h4>
+          <h4 id="list-item-tabs" class="mtop-15">Tabs</h4>
           <p><TabComponents></TabComponents></p>
-          <h4 id="list-item-timeline">Timeline</h4>
+          <h4 id="list-item-timeline" class="mtop-15">Timeline</h4>
           <p>{{ text }}</p>
-          <h4 id="list-item-treeview">Treeview</h4>
+          <h4 id="list-item-treeview" class="mtop-15">Treeview</h4>
           <p>{{ text }}</p>
-          <h4 id="list-item-typography">Typography</h4>
+          <h4 id="list-item-typography" class="mtop-15">Typography</h4>
           <p>{{ text }}</p>
         </div>
       </div>

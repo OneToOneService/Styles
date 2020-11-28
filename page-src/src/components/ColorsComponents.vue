@@ -2,6 +2,12 @@
   <div class="content">
     <div class="row">
       <div class="col-md-12">
+      <div class="usage-consideration">
+          <h3>Usage Consideration</h3>
+          <p class="mbottom-15">
+            The following color schemes has been used through out the iservice.
+          </p>
+        </div>
         <div class="box box-default color-palette-box">
           <div class="box-header with-border">
             <h3 class="box-title">Color Palette</h3>

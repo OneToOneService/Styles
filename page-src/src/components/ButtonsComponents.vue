@@ -2,9 +2,14 @@
   <div class="content">
     <div class="row">
       <div class="col-md-12">
-        <p class="action-description">
-          iService buttons are usually used in form action like save.
-        </p>
+        <div class="usage-consideration">
+          <h3>Usage Consideration</h3>
+          <p class="mbottom-15">
+          Action buttons, like submit, should use the Primary colors.
+Delete or Remove buttons that can't be undone are shown using the Danger color.
+Actions that are rarely used, like cancel, are shown as a hyper link instead of a button.
+          </p>
+        </div>
         <div class="box box-primary">
           <div class="box-header with-border">
             <h3 class="box-title">  Buttons </h3>
@@ -126,12 +131,26 @@
                    </div>
                  </div>
                </li>
+               <li>
+                 <div>
+                   <button class="btn btn-link " type="button">Cancel</button>  Cancel button
+                   <div class="code-container">
+                     <p>&nbsp;&lt;b-button class=&quot;btn-block btn-primary&quot;&gt;Primary&lt;/b-button&gt;</p>
+                   </div>
+                 </div>
+               </li>
              </ul>
            </div>
          </div>
        </div>
      </div>
      <div class="col-md-12">
+       <div class="usage-consideration">
+        <h3>Usage Consideration</h3>
+        <p class="mbottom-15">
+         Split buttons, are used for the buttons with multiple action options.
+        </p>
+       </div>
        <div class="box">
          <div class="box-header border-primary">
            <h3 class="box-title">Split Buttons</h3>

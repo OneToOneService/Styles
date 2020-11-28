@@ -1,6 +1,19 @@
 <template>
   <div class="content">
     <div class="row">
+      <div class="col-md-12">
+        <div class="usage-consideration">
+          <h3>Usage Consideration</h3>
+          <p class="mbottom-15">
+            Vertical forms - on most of the place vertical forms are used
+            Horizontal forms - when forms are small horizontal forms used,
+            Simple select list with search-
+            Multiselect list-
+            Group select list-
+            DatePicker-
+          </p>
+        </div>
+      </div>
       <div class="col-md-6">
         <div class="box box-primary">
           <div class="box-header with-border">
@@ -58,6 +71,9 @@
             <h3 class="box-title">Horizontal Form Example</h3>
           </div>
           <div class="box-body">
+            <p>
+              Horizontal forms are used for one liner forms in iservice.
+            </p>
             <div>
               <b-form-group
                 id="fieldset-horizontal"

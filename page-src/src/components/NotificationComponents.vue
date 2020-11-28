@@ -2,6 +2,14 @@
 <div class="content">
    <div class="row">
       <div class="col-md-12">
+       <div class="usage-consideration">
+          <h3>Usage Consideration</h3>
+          <p class="mbottom-15">
+           Broadcast messages - <br>
+           Success messages - <br>
+           Error messages - <br>
+          </p>
+        </div>
          <div class="box box-primary">
             <div class="box-header">
                <h3 class="box-title">Broadcast Error Messages </h3>

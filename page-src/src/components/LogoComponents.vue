@@ -1,6 +1,12 @@
 <template>
   <div class="content">
     <div class="row">
+     <div class="usage-consideration">
+          <h3>Usage Consideration</h3>
+          <p class="mbottom-15">
+            iServiceLogo -
+          </p>
+        </div>
       <div class="col-md-12">
         <div class="box box-default color-palette-box">
           <div class="box-header with-border">
