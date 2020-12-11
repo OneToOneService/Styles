@@ -50,9 +50,9 @@
           <h4 id="list-item-tabs" class="mtop-15">Tabs</h4>
           <p><TabComponents></TabComponents></p>
           <h4 id="list-item-timeline" class="mtop-15">Timeline</h4>
-          <p>{{ text }}</p>
+          <TimelineComponents></TimelineComponents>
           <h4 id="list-item-treeview" class="mtop-15">Treeview</h4>
-          <p>{{ text }}</p>
+          <p><TreeviewComponents></TreeviewComponents></p>
           <h4 id="list-item-typography" class="mtop-15">Typography</h4>
           <p>{{ text }}</p>
         </div>
@@ -70,6 +70,8 @@ import IconsComponents from './IconsComponents'
 import LoadersComponents from './LoadersComponents'
 import LogoComponents from './LogoComponents'
 import TabComponents from './TabComponents'
+import TreeviewComponents from './TreeviewComponents'
+import TimelineComponents from './TimelineComponents'
 export default {
   components: {
     ButtonsComponents,
@@ -80,7 +82,9 @@ export default {
     IconsComponents,
     LoadersComponents,
     LogoComponents,
-    TabComponents
+    TabComponents,
+    TreeviewComponents,
+    TimelineComponents
   },
   data () {
     return {

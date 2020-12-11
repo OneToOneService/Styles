@@ -7,12 +7,14 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './custom.scss'
 import CKEditor from '@ckeditor/ckeditor5-vue'
+import VTree from 'vue-tree-halower'
+import 'vue-tree-halower/dist/halower-tree.min.css'
 
+Vue.use(VTree)
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(CKEditor)
-
 new Vue({
   router,
   store,
